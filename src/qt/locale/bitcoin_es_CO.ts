@@ -126,8 +126,8 @@
         <translation>Abrir &amp;URL...</translation>
     </message>
     <message>
-        <source>Send coins to a Banditocoin address</source>
-        <translation>Enviando monedas a una dirección de Banditocoin</translation>
+        <source>Send coins to a Bandito address</source>
+        <translation>Enviando monedas a una dirección de Bandito</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
@@ -146,8 +146,8 @@
         <translation>&amp;Verificar Mensaje...</translation>
     </message>
     <message>
-        <source>Banditocoin</source>
-        <translation>Banditocoin</translation>
+        <source>Bandito</source>
+        <translation>Bandito</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -296,8 +296,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Banditocoin Core</source>
-        <translation>Banditocoin Core</translation>
+        <source>Bandito Core</source>
+        <translation>Bandito Core</translation>
     </message>
     <message>
         <source>Insufficient funds</source>

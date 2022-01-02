@@ -1,42 +1,42 @@
-Banditocoin Core integration/staging tree
+Bandito Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/banditocoin-project/banditocoin.svg?branch=master)](https://travis-ci.org/banditocoin-project/banditocoin)
+[![Build Status](https://travis-ci.org/bandito-project/bandito.svg?branch=master)](https://travis-ci.org/bandito-project/bandito)
 
-https://banditocoin.org
+https://bandito.org
 
-What is Banditocoin?
+What is Bandito?
 ----------------
 
-Banditocoin is an experimental digital currency that enables instant payments to
-anyone, anywhere in the world. Banditocoin uses peer-to-peer technology to operate
+Bandito is an experimental digital currency that enables instant payments to
+anyone, anywhere in the world. Bandito uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Banditocoin Core is the name of open source
+out collectively by the network. Bandito Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Banditocoin Core software, see [https://banditocoin.org](https://banditocoin.org).
+the Bandito Core software, see [https://bandito.org](https://bandito.org).
 
 License
 -------
 
-Banditocoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Bandito Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/banditocoin-project/banditocoin/tags) are created
-regularly to indicate new official, stable release versions of Banditocoin Core.
+completely stable. [Tags](https://github.com/bandito-project/bandito/tags) are created
+regularly to indicate new official, stable release versions of Bandito Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-The developer [mailing list](https://groups.google.com/forum/#!forum/banditocoin-dev)
+The developer [mailing list](https://groups.google.com/forum/#!forum/bandito-dev)
 should be used to discuss complicated or controversial changes before working
 on a patch set.
 
-Developer IRC can be found on Freenode at #banditocoin-dev.
+Developer IRC can be found on Freenode at #bandito-dev.
 
 Testing
 -------
@@ -70,7 +70,7 @@ Translations
 ------------
 
 We only accept translation fixes that are submitted through [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
-Translations are converted to Banditocoin periodically.
+Translations are converted to Bandito periodically.
 
 Translations are periodically pulled from Transifex and merged into the git repository. See the
 [translation process](doc/translation_process.md) for details on how this works.

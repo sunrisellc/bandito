@@ -70,7 +70,7 @@
         <translation>Құпия сөзді өзгерту</translation>
     </message>
     <message>
-        <source>Banditocoin</source>
+        <source>Bandito</source>
         <translation>Биткоин</translation>
     </message>
     <message>

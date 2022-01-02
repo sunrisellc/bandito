@@ -154,8 +154,8 @@
         <translation>Newid y cyfrinymadrodd a ddefnyddiwyd ar gyfer amgryptio'r waled</translation>
     </message>
     <message>
-        <source>Banditocoin</source>
-        <translation>Banditocoin</translation>
+        <source>Bandito</source>
+        <translation>Bandito</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -640,8 +640,8 @@
         <translation>Opsiynau:</translation>
     </message>
     <message>
-        <source>Banditocoin Core</source>
-        <translation>Craidd Banditocoin</translation>
+        <source>Bandito Core</source>
+        <translation>Craidd Bandito</translation>
     </message>
     <message>
         <source>Information</source>

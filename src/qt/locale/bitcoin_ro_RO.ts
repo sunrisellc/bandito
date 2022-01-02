@@ -54,12 +54,12 @@
         <translation>Adresa de primire</translation>
     </message>
     <message>
-        <source>These are your Banditocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Acestea sunt adresele tale Banditocoin pentru efectuarea platilor. Intotdeauna verifica atent suma de plata si adresa beneficiarului inainte de a trimite monede.</translation>
+        <source>These are your Bandito addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Acestea sunt adresele tale Bandito pentru efectuarea platilor. Intotdeauna verifica atent suma de plata si adresa beneficiarului inainte de a trimite monede.</translation>
     </message>
     <message>
-        <source>These are your Banditocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Acestea sunt adresele tale Banditocoin pentru receptionarea platilor. Este recomandat sa folosesti mereu o adresa noua pentru primirea platilor.</translation>
+        <source>These are your Bandito addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Acestea sunt adresele tale Bandito pentru receptionarea platilor. Este recomandat sa folosesti mereu o adresa noua pentru primirea platilor.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -230,8 +230,8 @@
         <translation>Se reindexează blocurile pe disc...</translation>
     </message>
     <message>
-        <source>Send coins to a Banditocoin address</source>
-        <translation>Trimite monede către o adresă Banditocoin</translation>
+        <source>Send coins to a Bandito address</source>
+        <translation>Trimite monede către o adresă Bandito</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -254,8 +254,8 @@
         <translation>&amp;Verifică mesaj...</translation>
     </message>
     <message>
-        <source>Banditocoin</source>
-        <translation>Banditocoin</translation>
+        <source>Bandito</source>
+        <translation>Bandito</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -282,12 +282,12 @@
         <translation>Criptează cheile private ale portofelului dvs.</translation>
     </message>
     <message>
-        <source>Sign messages with your Banditocoin addresses to prove you own them</source>
-        <translation>Semnaţi mesaje cu adresa dvs. Banditocoin pentru a dovedi că vă aparţin</translation>
+        <source>Sign messages with your Bandito addresses to prove you own them</source>
+        <translation>Semnaţi mesaje cu adresa dvs. Bandito pentru a dovedi că vă aparţin</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Banditocoin addresses</source>
-        <translation>Verificaţi mesaje pentru a vă asigura că au fost semnate cu adresa Banditocoin specificată</translation>
+        <source>Verify messages to ensure they were signed with specified Bandito addresses</source>
+        <translation>Verificaţi mesaje pentru a vă asigura că au fost semnate cu adresa Bandito specificată</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -306,8 +306,8 @@
         <translation>Bara de unelte</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and banditocoin: URIs)</source>
-        <translation>Cereţi plăţi (generează coduri QR şi banditocoin-uri: URls)</translation>
+        <source>Request payments (generates QR codes and bandito: URIs)</source>
+        <translation>Cereţi plăţi (generează coduri QR şi bandito-uri: URls)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -318,16 +318,16 @@
         <translation>Arată lista de adrese pentru primire şi etichetele</translation>
     </message>
     <message>
-        <source>Open a banditocoin: URI or payment request</source>
-        <translation>Deschidere banditocoin: o adresa URI sau o cerere de plată</translation>
+        <source>Open a bandito: URI or payment request</source>
+        <translation>Deschidere bandito: o adresa URI sau o cerere de plată</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Opţiuni linie de &amp;comandă</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Banditocoin network</source>
-        <translation><numerusform>%n conexiune activă către reţeaua Banditocoin</numerusform><numerusform>%n conexiuni active către reţeaua Banditocoin</numerusform><numerusform>%n de conexiuni active către reţeaua Banditocoin</numerusform></translation>
+        <source>%n active connection(s) to Bandito network</source>
+        <translation><numerusform>%n conexiune activă către reţeaua Bandito</numerusform><numerusform>%n conexiuni active către reţeaua Bandito</numerusform><numerusform>%n de conexiuni active către reţeaua Bandito</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
@@ -732,16 +732,16 @@
         <translation>Cheltuire rest neconfirmat</translation>
     </message>
     <message>
-        <source>Automatically open the Banditocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Deschide automat în router portul aferent clientului Banditocoin. Funcţionează doar dacă routerul duportă UPnP şi e activat.</translation>
+        <source>Automatically open the Bandito client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Deschide automat în router portul aferent clientului Bandito. Funcţionează doar dacă routerul duportă UPnP şi e activat.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapare port folosind &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Banditocoin network through a SOCKS5 proxy.</source>
-        <translation>Conectare la reţeaua Banditocoin printr-un proxy SOCKS.</translation>
+        <source>Connect to the Bandito network through a SOCKS5 proxy.</source>
+        <translation>Conectare la reţeaua Bandito printr-un proxy SOCKS.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -801,7 +801,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Alegeţi subdiviziunea folosită la afişarea interfeţei şi la trimiterea de banditocoin.</translation>
+        <translation>Alegeţi subdiviziunea folosită la afişarea interfeţei şi la trimiterea de bandito.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -841,7 +841,7 @@
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
-        <translation>Adresa banditocoin pe care aţi specificat-o nu este validă.</translation>
+        <translation>Adresa bandito pe care aţi specificat-o nu este validă.</translation>
     </message>
 </context>
 <context>
@@ -851,8 +851,8 @@
         <translation>Form</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Banditocoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informaţiile afişate pot fi neactualizate. Portofelul dvs. se sincronizează automat cu reţeaua Banditocoin după ce o conexiune este stabilită, dar acest proces nu a fost finalizat încă.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bandito network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informaţiile afişate pot fi neactualizate. Portofelul dvs. se sincronizează automat cu reţeaua Bandito după ce o conexiune este stabilită, dar acest proces nu a fost finalizat încă.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -940,8 +940,8 @@
         <translation>Cantitate</translation>
     </message>
     <message>
-        <source>Enter a Banditocoin address (e.g. %1)</source>
-        <translation>Introduceţi o adresă Banditocoin (de exemplu %1)</translation>
+        <source>Enter a Bandito address (e.g. %1)</source>
+        <translation>Introduceţi o adresă Bandito (de exemplu %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1240,8 +1240,8 @@
         <translation>R&amp;efoloseşte o adresă de primire (nu este recomandat)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Banditocoin network.</source>
-        <translation>Un mesaj opţional de ataşat la cererea de plată, care va fi afişat cînd cererea este deschisă. Notă: Acest mesaj nu va fi trimis cu plata către reţeaua Banditocoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bandito network.</source>
+        <translation>Un mesaj opţional de ataşat la cererea de plată, care va fi afişat cînd cererea este deschisă. Notă: Acest mesaj nu va fi trimis cu plata către reţeaua Bandito.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1472,8 +1472,8 @@
         <translation>Aceasta este o tranzacţie normală.</translation>
     </message>
     <message>
-        <source>The Banditocoin address to send the payment to</source>
-        <translation>Adresa banditocoin către care se face plata</translation>
+        <source>The Bandito address to send the payment to</source>
+        <translation>Adresa bandito către care se face plata</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1500,8 +1500,8 @@
         <translation>Introduceţi eticheta pentru ca această adresa să fie introdusă în lista de adrese folosite</translation>
     </message>
     <message>
-        <source>A message that was attached to the banditocoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Banditocoin network.</source>
-        <translation>un mesaj a fost ataşat la banditocoin: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua banditocoin.</translation>
+        <source>A message that was attached to the bandito: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bandito network.</source>
+        <translation>un mesaj a fost ataşat la bandito: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua bandito.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1537,7 +1537,7 @@
         <translation>&amp;Semnează mesaj</translation>
     </message>
     <message>
-        <source>The Banditocoin address to sign the message with</source>
+        <source>The Bandito address to sign the message with</source>
         <translation>Adresa cu care semnaţi mesajul</translation>
     </message>
     <message>
@@ -1569,8 +1569,8 @@
         <translation>Copiază semnatura curentă în clipboard-ul sistemului</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Banditocoin address</source>
-        <translation>Semnează mesajul pentru a dovedi ca deţineţi acestă adresă Banditocoin</translation>
+        <source>Sign the message to prove you own this Bandito address</source>
+        <translation>Semnează mesajul pentru a dovedi ca deţineţi acestă adresă Bandito</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1589,12 +1589,12 @@
         <translation>&amp;Verifică mesaj</translation>
     </message>
     <message>
-        <source>The Banditocoin address the message was signed with</source>
-        <translation>Introduceţi o adresă Banditocoin</translation>
+        <source>The Bandito address the message was signed with</source>
+        <translation>Introduceţi o adresă Bandito</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Banditocoin address</source>
-        <translation>Verificaţi mesajul pentru a vă asigura că a fost semnat cu adresa Banditocoin specificată</translation>
+        <source>Verify the message to ensure it was signed with the specified Bandito address</source>
+        <translation>Verificaţi mesajul pentru a vă asigura că a fost semnat cu adresa Bandito specificată</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1702,8 +1702,8 @@
         <translation>Rulează în fundal ca un demon şi acceptă comenzi</translation>
     </message>
     <message>
-        <source>Banditocoin Core</source>
-        <translation>Nucleul Banditocoin</translation>
+        <source>Bandito Core</source>
+        <translation>Nucleul Bandito</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

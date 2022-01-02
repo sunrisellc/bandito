@@ -124,10 +124,10 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x9982f80196981559d8a68830e8574117b3d30d7b33af51a8226a9cf0782ca5f4"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        //vSeeds.emplace_back("seed-a.banditocoin.loshan.co.uk", true);
+        //vSeeds.emplace_back("seed-a.bandito.loshan.co.uk", true);
         //vSeeds.emplace_back("dnsseed.thrasher.io", true);
-        //vSeeds.emplace_back("dnsseed.banditocointools.com", true);
-        //vSeeds.emplace_back("dnsseed.banditocoinpool.org", true);
+        //vSeeds.emplace_back("dnsseed.banditotools.com", true);
+        //vSeeds.emplace_back("dnsseed.banditopool.org", true);
         //vSeeds.emplace_back("dnsseed.koin-project.com", false);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,25);
@@ -213,8 +213,8 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("testnet-seed.banditocointools.com", true);
-        vSeeds.emplace_back("seed-b.banditocoin.loshan.co.uk", true);
+        vSeeds.emplace_back("testnet-seed.banditotools.com", true);
+        vSeeds.emplace_back("seed-b.bandito.loshan.co.uk", true);
         vSeeds.emplace_back("dnsseed-testnet.thrasher.io", true);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);

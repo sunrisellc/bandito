@@ -62,12 +62,12 @@
         <translation>Vastuvõtvad aadressid</translation>
     </message>
     <message>
-        <source>These are your Banditocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Need on sinu Banditocoin aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
+        <source>These are your Bandito addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Need on sinu Bandito aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
     </message>
     <message>
-        <source>These are your Banditocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Need on sinu Banditocoin aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
+        <source>These are your Bandito addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Need on sinu Bandito aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -290,8 +290,8 @@
         <translation>Kettal olevate blokkide re-indekseerimine...</translation>
     </message>
     <message>
-        <source>Send coins to a Banditocoin address</source>
-        <translation>Saada münte Banditocoini aadressile</translation>
+        <source>Send coins to a Bandito address</source>
+        <translation>Saada münte Banditoi aadressile</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -314,8 +314,8 @@
         <translation>&amp;Kontrolli sõnumit...</translation>
     </message>
     <message>
-        <source>Banditocoin</source>
-        <translation>Banditocoin</translation>
+        <source>Bandito</source>
+        <translation>Bandito</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -342,12 +342,12 @@
         <translation>Krüpteeri oma rahakoti privaatvõtmed</translation>
     </message>
     <message>
-        <source>Sign messages with your Banditocoin addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Banditocoini aadressiga</translation>
+        <source>Sign messages with your Bandito addresses to prove you own them</source>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Banditoi aadressiga</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Banditocoin addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Banditocoini aadressiga</translation>
+        <source>Verify messages to ensure they were signed with specified Bandito addresses</source>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Banditoi aadressiga</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -366,20 +366,20 @@
         <translation>Vahelehe tööriistariba</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and banditocoin: URIs)</source>
-        <translation>Loo maksepäring (genereerib QR koodid ja banditocoini: URId)</translation>
+        <source>Request payments (generates QR codes and bandito: URIs)</source>
+        <translation>Loo maksepäring (genereerib QR koodid ja banditoi: URId)</translation>
     </message>
     <message>
-        <source>Open a banditocoin: URI or payment request</source>
-        <translation>Ava banditocoini: URI või maksepäring</translation>
+        <source>Open a bandito: URI or payment request</source>
+        <translation>Ava banditoi: URI või maksepäring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Käsurea valikud</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Banditocoin network</source>
-        <translation><numerusform>%n aktiivne ühendus Banditocoini võrku</numerusform><numerusform>%n aktiivset ühendust Banditocoini võrku</numerusform></translation>
+        <source>%n active connection(s) to Bandito network</source>
+        <translation><numerusform>%n aktiivne ühendus Banditoi võrku</numerusform><numerusform>%n aktiivset ühendust Banditoi võrku</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -626,8 +626,8 @@
         <translation>Muuda saatvat aadressi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Banditocoin address.</source>
-        <translation>Sisestatud aadress "%1" ei ole korrektne Banditocoin aadress.</translation>
+        <source>The entered address "%1" is not a valid Bandito address.</source>
+        <translation>Sisestatud aadress "%1" ei ole korrektne Bandito aadress.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -756,8 +756,8 @@
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically open the Banditocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Banditocoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
+        <source>Automatically open the Bandito client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Banditoi kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -855,7 +855,7 @@
         <translation>Vorm</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Banditocoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bandito network after a connection is established, but this process has not completed yet.</source>
         <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Liteconi võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
     </message>
     <message>
@@ -1337,8 +1337,8 @@
         <translation>Maksepäring aegunud.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Banditocoin address</source>
-        <translation>Hoiatus: Ebakorrektne Banditocoin aadress</translation>
+        <source>Warning: Invalid Bandito address</source>
+        <translation>Hoiatus: Ebakorrektne Bandito aadress</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1417,8 +1417,8 @@
         <translation>&amp;Allkirjastamise teade</translation>
     </message>
     <message>
-        <source>The Banditocoin address to sign the message with</source>
-        <translation>Banditocoin aadress millega sõnum allkirjastada</translation>
+        <source>The Bandito address to sign the message with</source>
+        <translation>Bandito aadress millega sõnum allkirjastada</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1449,8 +1449,8 @@
         <translation>Kopeeri praegune signatuur vahemällu</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Banditocoin address</source>
-        <translation>Allkirjasta sõnum Banditocoini aadressi sulle kuulumise tõestamiseks</translation>
+        <source>Sign the message to prove you own this Bandito address</source>
+        <translation>Allkirjasta sõnum Banditoi aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1469,12 +1469,12 @@
         <translation>&amp;Kinnita Sõnum</translation>
     </message>
     <message>
-        <source>The Banditocoin address the message was signed with</source>
-        <translation>Banditocoin aadress millega sõnum on allkirjastatud</translation>
+        <source>The Bandito address the message was signed with</source>
+        <translation>Bandito aadress millega sõnum on allkirjastatud</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Banditocoin address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Banditocoini aadressiga.</translation>
+        <source>Verify the message to ensure it was signed with the specified Bandito address</source>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Banditoi aadressiga.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1758,8 +1758,8 @@
         <translation>Tööta taustal ning aktsepteeri käsklusi</translation>
     </message>
     <message>
-        <source>Banditocoin Core</source>
-        <translation>Banditocoini tuumik</translation>
+        <source>Bandito Core</source>
+        <translation>Banditoi tuumik</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

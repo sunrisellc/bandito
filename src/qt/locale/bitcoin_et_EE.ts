@@ -130,8 +130,8 @@
         <translation>Kõvakettal olevate plokkide reindekseerimine...</translation>
     </message>
     <message>
-        <source>Banditocoin</source>
-        <translation>Banditocoin</translation>
+        <source>Bandito</source>
+        <translation>Bandito</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -760,8 +760,8 @@
         <translation>Valikud:</translation>
     </message>
     <message>
-        <source>Banditocoin Core</source>
-        <translation>Banditocoin Core</translation>
+        <source>Bandito Core</source>
+        <translation>Bandito Core</translation>
     </message>
     <message>
         <source>Information</source>

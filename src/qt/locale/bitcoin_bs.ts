@@ -14,8 +14,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Banditocoin</source>
-        <translation>Banditocoin</translation>
+        <source>Bandito</source>
+        <translation>Bandito</translation>
     </message>
     </context>
 <context>
@@ -156,8 +156,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Banditocoin Core</source>
-        <translation>Banditocoin Jezrga</translation>
+        <source>Bandito Core</source>
+        <translation>Bandito Jezrga</translation>
     </message>
     </context>
 </TS>

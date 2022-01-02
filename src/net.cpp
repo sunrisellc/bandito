@@ -1479,7 +1479,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Banditocoin " + FormatFullVersion();
+        std::string strDesc = "Bandito " + FormatFullVersion();
 
         try {
             while (true) {

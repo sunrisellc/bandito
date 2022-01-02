@@ -62,12 +62,12 @@
         <translation>адрасы Прымання</translation>
     </message>
     <message>
-        <source>These are your Banditocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Тут знаходзяцца Banditocoin-адрасы для высылання плацяжоў. Заўсёды спраўджвайце колькасць і адрас прызначэння перад здзяйсненнем транзакцыі.</translation>
+        <source>These are your Bandito addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Тут знаходзяцца Bandito-адрасы для высылання плацяжоў. Заўсёды спраўджвайце колькасць і адрас прызначэння перад здзяйсненнем транзакцыі.</translation>
     </message>
     <message>
-        <source>These are your Banditocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Тут знаходзяцца Banditocoin-адрасы для прымання плацяжоў. Пажадана выкарыстоўваць новы адрас для кожнай транзакцыі.</translation>
+        <source>These are your Bandito addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Тут знаходзяцца Bandito-адрасы для прымання плацяжоў. Пажадана выкарыстоўваць новы адрас для кожнай транзакцыі.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -298,8 +298,8 @@
         <translation>Пераіндэксацыя блокаў на дыску...</translation>
     </message>
     <message>
-        <source>Send coins to a Banditocoin address</source>
-        <translation>Даслаць манеты на Banditocoin-адрас</translation>
+        <source>Send coins to a Bandito address</source>
+        <translation>Даслаць манеты на Bandito-адрас</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -322,8 +322,8 @@
         <translation>Праверыць паведамленне...</translation>
     </message>
     <message>
-        <source>Banditocoin</source>
-        <translation>Banditocoin</translation>
+        <source>Bandito</source>
+        <translation>Bandito</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -350,12 +350,12 @@
         <translation>Зашыфраваць прыватныя ключы, якия належаць вашаму гаманцу</translation>
     </message>
     <message>
-        <source>Sign messages with your Banditocoin addresses to prove you own them</source>
-        <translation>Падпісаць паведамленне з дапамогай Banditocoin-адраса каб даказаць, што яно належыць вам</translation>
+        <source>Sign messages with your Bandito addresses to prove you own them</source>
+        <translation>Падпісаць паведамленне з дапамогай Bandito-адраса каб даказаць, што яно належыць вам</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Banditocoin addresses</source>
-        <translation>Спраўдзіць паведамленне з дапамогай Banditocoin-адраса каб даказаць, што яно належыць вам</translation>
+        <source>Verify messages to ensure they were signed with specified Bandito addresses</source>
+        <translation>Спраўдзіць паведамленне з дапамогай Bandito-адраса каб даказаць, што яно належыць вам</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -370,8 +370,8 @@
         <translation>Дапамога</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and banditocoin: URIs)</source>
-        <translation>Запатрабаваць плацёж (генеруецца QR-код для banditocoin URI)</translation>
+        <source>Request payments (generates QR codes and bandito: URIs)</source>
+        <translation>Запатрабаваць плацёж (генеруецца QR-код для bandito URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -382,8 +382,8 @@
         <translation>Паказаць спіс адрасоў і метак для прымання</translation>
     </message>
     <message>
-        <source>Open a banditocoin: URI or payment request</source>
-        <translation>Адкрыць banditocoin: URI ці запыт плацяжу</translation>
+        <source>Open a bandito: URI or payment request</source>
+        <translation>Адкрыць bandito: URI ці запыт плацяжу</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1258,8 +1258,8 @@
         <translation>Запусціць у фоне як дэман і прымаць каманды</translation>
     </message>
     <message>
-        <source>Banditocoin Core</source>
-        <translation>Banditocoin Core</translation>
+        <source>Bandito Core</source>
+        <translation>Bandito Core</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>

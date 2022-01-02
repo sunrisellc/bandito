@@ -531,8 +531,8 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/banditocoin-project/banditocoin>";
-    const std::string URL_WEBSITE = "<https://banditocoin.org>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/bandito-project/bandito>";
+    const std::string URL_WEBSITE = "<https://bandito.org>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
@@ -830,7 +830,7 @@ void InitLogging()
     fLogIPs = gArgs.GetBoolArg("-logips", DEFAULT_LOGIPS);
 
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("Banditocoin version %s\n", FormatFullVersion());
+    LogPrintf("Bandito version %s\n", FormatFullVersion());
 }
 
 namespace { // Variables internal to initialization process only

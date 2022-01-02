@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Banditocoin-Qt</string>
+  <string>Bandito-Qt</string>
   
   <key>CFBundleName</key>
-  <string>Banditocoin-Qt</string>
+  <string>Bandito-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.banditocoin.Banditocoin-Qt</string>
+  <string>org.bandito.Bandito-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.banditocoin.BanditocoinPayment</string>
+      <string>org.bandito.BanditoPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>banditocoin</string>
+        <string>bandito</string>
       </array>
     </dict>
   </array>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.banditocoin.paymentrequest</string>
+      <string>org.bandito.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Banditocoin payment request</string>
+      <string>Bandito payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -68,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-banditocoin-payment-request</string>
+        <string>application/x-bandito-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>banditocoinpaymentrequest</string>
+          <string>banditopaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.banditocoin.paymentrequest</string>
+        <string>org.bandito.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

@@ -66,11 +66,11 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += banditocoind
+  bin_PROGRAMS += banditod
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += banditocoin-cli banditocoin-tx
+  bin_PROGRAMS += bandito-cli bandito-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
@@ -370,16 +370,16 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-banditocoind_SOURCES = bitcoind.cpp
-banditocoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-banditocoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-banditocoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+banditod_SOURCES = bitcoind.cpp
+banditod_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+banditod_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+banditod_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-banditocoind_SOURCES += bitcoind-res.rc
+banditod_SOURCES += bitcoind-res.rc
 endif
 
-banditocoind_LDADD = \
+banditod_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -393,38 +393,38 @@ banditocoind_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-banditocoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+banditod_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # bitcoin-cli binary #
-banditocoin_cli_SOURCES = bitcoin-cli.cpp
-banditocoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-banditocoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-banditocoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+bandito_cli_SOURCES = bitcoin-cli.cpp
+bandito_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+bandito_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+bandito_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-banditocoin_cli_SOURCES += bitcoin-cli-res.rc
+bandito_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-banditocoin_cli_LDADD = \
+bandito_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-banditocoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+bandito_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # bitcoin-tx binary #
-banditocoin_tx_SOURCES = bitcoin-tx.cpp
-banditocoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-banditocoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-banditocoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+bandito_tx_SOURCES = bitcoin-tx.cpp
+bandito_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+bandito_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+bandito_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-banditocoin_tx_SOURCES += bitcoin-tx-res.rc
+bandito_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-banditocoin_tx_LDADD = \
+bandito_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -432,7 +432,7 @@ banditocoin_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-banditocoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+bandito_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

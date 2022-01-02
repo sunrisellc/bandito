@@ -90,8 +90,8 @@
         <translation>&amp;செய்தியை சரிசெய்...</translation>
     </message>
     <message>
-        <source>Banditocoin</source>
-        <translation>Banditocoin</translation>
+        <source>Bandito</source>
+        <translation>Bandito</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -708,8 +708,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Banditocoin Core</source>
-        <translation>Banditocoin மையம்</translation>
+        <source>Bandito Core</source>
+        <translation>Bandito மையம்</translation>
     </message>
     <message>
         <source>(default: %u)</source>

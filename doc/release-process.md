@@ -5,7 +5,7 @@ Before every release candidate:
 
 * Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/bitcoin/bitcoin/blob/master/doc/translation_process.md#synchronising-translations).
 
-* Update manpages, see [gen-manpages.sh](https://github.com/banditocoin-project/banditocoin/blob/master/contrib/devtools/README.md#gen-manpagessh).
+* Update manpages, see [gen-manpages.sh](https://github.com/bandito-project/bandito/blob/master/contrib/devtools/README.md#gen-manpagessh).
 
 Before every minor and major release:
 
@@ -33,12 +33,12 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/banditocoin-project/gitian.sigs.ltc.git
-    git clone https://github.com/banditocoin-project/banditocoin-detached-sigs.git
+    git clone https://github.com/bandito-project/gitian.sigs.ltc.git
+    git clone https://github.com/bandito-project/bandito-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/banditocoin-project/banditocoin.git
+    git clone https://github.com/bandito-project/bandito.git
 
-### Banditocoin maintainers/release engineers, suggestion for writing release notes
+### Bandito maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -61,7 +61,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./banditocoin
+    pushd ./bandito
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -95,7 +95,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../banditocoin/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../bandito/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -103,50 +103,50 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url banditocoin=/path/to/banditocoin,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url bandito=/path/to/bandito,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Banditocoin Core for Linux, Windows, and OS X:
+### Build and sign Bandito Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --num-make 2 --memory 3000 --commit banditocoin=v${VERSION} ../banditocoin/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.ltc/ ../banditocoin/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/banditocoin-*.tar.gz build/out/src/banditocoin-*.tar.gz ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit bandito=v${VERSION} ../bandito/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.ltc/ ../bandito/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/bandito-*.tar.gz build/out/src/bandito-*.tar.gz ../
 
-    ./bin/gbuild --num-make 2 --memory 3000 --commit banditocoin=v${VERSION} ../banditocoin/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.ltc/ ../banditocoin/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/banditocoin-*-win-unsigned.tar.gz inputs/banditocoin-win-unsigned.tar.gz
-    mv build/out/banditocoin-*.zip build/out/banditocoin-*.exe ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit bandito=v${VERSION} ../bandito/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.ltc/ ../bandito/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/bandito-*-win-unsigned.tar.gz inputs/bandito-win-unsigned.tar.gz
+    mv build/out/bandito-*.zip build/out/bandito-*.exe ../
 
-    ./bin/gbuild --num-make 2 --memory 3000 --commit banditocoin=v${VERSION} ../banditocoin/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.ltc/ ../banditocoin/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/banditocoin-*-osx-unsigned.tar.gz inputs/banditocoin-osx-unsigned.tar.gz
-    mv build/out/banditocoin-*.tar.gz build/out/banditocoin-*.dmg ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit bandito=v${VERSION} ../bandito/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.ltc/ ../bandito/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/bandito-*-osx-unsigned.tar.gz inputs/bandito-osx-unsigned.tar.gz
+    mv build/out/bandito-*.tar.gz build/out/bandito-*.dmg ../
     popd
 
 Build output expected:
 
-  1. source tarball (`banditocoin-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`banditocoin-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`banditocoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `banditocoin-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`banditocoin-${VERSION}-osx-unsigned.dmg`, `banditocoin-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`bandito-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`bandito-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`bandito-${VERSION}-win[32|64]-setup-unsigned.exe`, `bandito-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`bandito-${VERSION}-osx-unsigned.dmg`, `bandito-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs.ltc/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import banditocoin/contrib/gitian-keys/*.pgp
+    gpg --import bandito/contrib/gitian-keys/*.pgp
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-linux ../banditocoin/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-unsigned ../banditocoin/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-unsigned ../banditocoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-linux ../bandito/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-unsigned ../bandito/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-unsigned ../bandito/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
@@ -167,22 +167,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer banditocoin-osx-unsigned.tar.gz to osx for signing
-    tar xf banditocoin-osx-unsigned.tar.gz
+    transfer bandito-osx-unsigned.tar.gz to osx for signing
+    tar xf bandito-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf banditocoin-win-unsigned.tar.gz
+    tar xf bandito-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/banditocoin-detached-sigs
+    cd ~/bandito-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -195,25 +195,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [banditocoin-detached-sigs](https://github.com/banditocoin-project/banditocoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [bandito-detached-sigs](https://github.com/bandito-project/bandito-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../banditocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.ltc/ ../banditocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../banditocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/banditocoin-osx-signed.dmg ../banditocoin-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../bandito/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.ltc/ ../bandito/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../bandito/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/bandito-osx-signed.dmg ../bandito-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../banditocoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.ltc/ ../banditocoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-signed ../banditocoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/banditocoin-*win64-setup.exe ../banditocoin-${VERSION}-win64-setup.exe
-    mv build/out/banditocoin-*win32-setup.exe ../banditocoin-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../bandito/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.ltc/ ../bandito/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-signed ../bandito/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/bandito-*win64-setup.exe ../bandito-${VERSION}-win64-setup.exe
+    mv build/out/bandito-*win32-setup.exe ../bandito-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -235,23 +235,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-banditocoin-${VERSION}-aarch64-linux-gnu.tar.gz
-banditocoin-${VERSION}-arm-linux-gnueabihf.tar.gz
-banditocoin-${VERSION}-i686-pc-linux-gnu.tar.gz
-banditocoin-${VERSION}-x86_64-linux-gnu.tar.gz
-banditocoin-${VERSION}-osx64.tar.gz
-banditocoin-${VERSION}-osx.dmg
-banditocoin-${VERSION}.tar.gz
-banditocoin-${VERSION}-win32-setup.exe
-banditocoin-${VERSION}-win32.zip
-banditocoin-${VERSION}-win64-setup.exe
-banditocoin-${VERSION}-win64.zip
+bandito-${VERSION}-aarch64-linux-gnu.tar.gz
+bandito-${VERSION}-arm-linux-gnueabihf.tar.gz
+bandito-${VERSION}-i686-pc-linux-gnu.tar.gz
+bandito-${VERSION}-x86_64-linux-gnu.tar.gz
+bandito-${VERSION}-osx64.tar.gz
+bandito-${VERSION}-osx.dmg
+bandito-${VERSION}.tar.gz
+bandito-${VERSION}-win32-setup.exe
+bandito-${VERSION}-win32.zip
+bandito-${VERSION}-win64-setup.exe
+bandito-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the banditocoin.org server, nor put them in the torrent*.
+space *do not upload these to the bandito.org server, nor put them in the torrent*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -261,24 +261,24 @@ rm SHA256SUMS
 (the digest algorithm is forced to sha256 to avoid confusion of the `Hash:` header that GPG adds with the SHA256 used for the files)
 Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spurious/nonsensical entry.
 
-- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the banditocoin.org server.
+- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the bandito.org server.
 
 ```
 
-- Update banditocoin.org version
+- Update bandito.org version
 
 - Announce the release:
 
-  - banditocoin-dev and banditocoin-dev mailing list
+  - bandito-dev and bandito-dev mailing list
 
-  - blog.banditocoin.org blog post
+  - blog.bandito.org blog post
 
-  - Update title of #banditocoin and #banditocoin-dev on Freenode IRC
+  - Update title of #bandito and #bandito-dev on Freenode IRC
 
-  - Optionally twitter, reddit /r/Banditocoin, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/Bandito, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/banditocoin-project/banditocoin/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/bandito-project/bandito/releases/new) with a link to the archived release notes.
 
   - Celebrate

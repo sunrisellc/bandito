@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Banditocoin"
-            VALUE "FileDescription",    "banditocoin-cli (JSON-RPC client for " PACKAGE_NAME ")"
+            VALUE "CompanyName",        "Bandito"
+            VALUE "FileDescription",    "bandito-cli (JSON-RPC client for " PACKAGE_NAME ")"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "banditocoin-cli"
+            VALUE "InternalName",       "bandito-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "banditocoin-cli.exe"
-            VALUE "ProductName",        "banditocoin-cli"
+            VALUE "OriginalFilename",   "bandito-cli.exe"
+            VALUE "ProductName",        "bandito-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

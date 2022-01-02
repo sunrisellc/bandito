@@ -1,41 +1,41 @@
-Banditocoin Core
+Bandito Core
 =============
 
 Setup
 ---------------------
-Banditocoin Core is the original Banditocoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Banditocoin transactions (which is currently more than 7 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+Bandito Core is the original Bandito client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Bandito transactions (which is currently more than 7 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Banditocoin Core, visit [banditocoin.org](https://banditocoin.org).
+To download Bandito Core, visit [bandito.org](https://bandito.org).
 
 Running
 ---------------------
-The following are some helpful notes on how to run Banditocoin on your native platform.
+The following are some helpful notes on how to run Bandito on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/banditocoin-qt` (GUI) or
-- `bin/banditocoind` (headless)
+- `bin/bandito-qt` (GUI) or
+- `bin/banditod` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run banditocoin-qt.exe.
+Unpack the files into a directory, and then run bandito-qt.exe.
 
 ### OS X
 
-Drag Banditocoin-Core to your applications folder, and then run Banditocoin-Core.
+Drag Bandito-Core to your applications folder, and then run Bandito-Core.
 
 ### Need Help?
 
-* See the documentation at the [Banditocoin Wiki](https://banditocoin.info/)
+* See the documentation at the [Bandito Wiki](https://bandito.info/)
 for help and more information.
-* Ask for help on [#banditocoin](http://webchat.freenode.net?channels=banditocoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=banditocoin).
-* Ask for help on the [BanditocoinTalk](https://banditocointalk.io/) forums.
+* Ask for help on [#bandito](http://webchat.freenode.net?channels=bandito) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=bandito).
+* Ask for help on the [BanditoTalk](https://banditotalk.io/) forums.
 
 Building
 ---------------------
-The following are developer notes on how to build Banditocoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Bandito on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -45,12 +45,12 @@ The following are developer notes on how to build Banditocoin on your native pla
 
 Development
 ---------------------
-The Banditocoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Bandito repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://dev.visucore.com/banditocoin/doxygen/)
+- [Source Code Documentation (External Link)](https://dev.visucore.com/bandito/doxygen/)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
 - [Travis CI](travis-ci.md)
@@ -61,8 +61,8 @@ The Banditocoin repo's [root README](/README.md) contains relevant information o
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [BanditocoinTalk](https://banditocointalk.io/) forums.
-* Discuss general Banditocoin development on #banditocoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=banditocoin-dev).
+* Discuss on the [BanditoTalk](https://banditotalk.io/) forums.
+* Discuss general Bandito development on #bandito-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=bandito-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

@@ -28,17 +28,17 @@ If you want to build with ZeroMQ support
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-Build Banditocoin Core
+Build Bandito Core
 ------------------------
 
-1. Clone the banditocoin source code and cd into `banditocoin`
+1. Clone the bandito source code and cd into `bandito`
 
-        git clone https://github.com/banditocoin-project/banditocoin
-        cd banditocoin
+        git clone https://github.com/bandito-project/bandito
+        cd bandito
 
-2.  Build banditocoin-core:
+2.  Build bandito-core:
 
-    Configure and build the headless banditocoin binaries as well as the GUI (if Qt is found).
+    Configure and build the headless bandito binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -57,37 +57,37 @@ Build Banditocoin Core
 Running
 -------
 
-Banditocoin Core is now available at `./src/banditocoind`
+Bandito Core is now available at `./src/banditod`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=banditocoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Banditocoin/banditocoin.conf"
+    echo -e "rpcuser=banditorpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Bandito/bandito.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/Banditocoin/banditocoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Bandito/bandito.conf"
 
-The first time you run banditocoind, it will start downloading the blockchain. This process could take several hours.
+The first time you run banditod, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/Banditocoin/debug.log
+    tail -f $HOME/Library/Application\ Support/Bandito/debug.log
 
 Other commands:
 -------
 
-    ./src/banditocoind -daemon # Starts the banditocoin daemon.
-    ./src/banditocoin-cli --help # Outputs a list of command-line options.
-    ./src/banditocoin-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/banditod -daemon # Starts the bandito daemon.
+    ./src/bandito-cli --help # Outputs a list of command-line options.
+    ./src/bandito-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Using Qt Creator as IDE
 ------------------------
-You can use Qt Creator as an IDE, for banditocoin development.
+You can use Qt Creator as an IDE, for bandito development.
 Download and install the community edition of [Qt Creator](https://www.qt.io/download/).
 Uncheck everything except Qt Creator during the installation process.
 
 1. Make sure you installed everything through Homebrew mentioned above
 2. Do a proper ./configure --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "banditocoin-qt" as project name, enter src/qt as location
+4. Enter "bandito-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."
