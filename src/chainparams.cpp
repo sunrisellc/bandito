@@ -48,7 +48,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "AP News Jan/01/2022, New year brings more canceled flights for air travelers.";
+    const char* pszTimestamp = "AP World News 01-02-2022 | Fire ravages South Africa’s historic Parliament complex";
     const CScript genesisOutputScript = CScript() << ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -80,8 +80,8 @@ public:
         consensus.BIP65Height = 918684; // bab3041e8977e0dc3eeff63fe707b92bde1dd449d8efafb248c27c8264cc311a
         consensus.BIP66Height = 811879; // 7aceee012833fa8952f8835d8b1b3ae233cd6ab08fdb27a771d2bd7bdc491894
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); 
-        consensus.nPowTargetTimespan = 1.75 * 24 * 60 * 60; // 3.5 days
-        consensus.nPowTargetSpacing = 1.25 * 60;
+        consensus.nPowTargetTimespan = 3.5 * 24 * 60 * 60; // 3.5 days
+        consensus.nPowTargetSpacing = 2.5 * 60;
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 6048; // 75% of 8064
@@ -104,7 +104,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x00");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00"); //1353397
+        consensus.defaultAssumeValid = uint256S("0x00"); //0
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -118,10 +118,10 @@ public:
         nDefaultPort = 42069;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1641054360, 2085353509, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1641142800, 2085105567, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-	assert(consensus.hashGenesisBlock == uint256S("f3983a9eeabda4ad11b339e1e533167c7dd52486b4da937179c2b464fb2f0d81"));
-        assert(genesis.hashMerkleRoot == uint256S("9982f80196981559d8a68830e8574117b3d30d7b33af51a8226a9cf0782ca5f4"));
+	assert(consensus.hashGenesisBlock == uint256S("1c17f6575a04848f074626278e10dc14cec05897dd5458cfa4588a9834dfec32"));
+        assert(genesis.hashMerkleRoot == uint256S("c6d49facea084c9d6c4d8ce9deb6030f022e2d61287f4f8c6c39b18fca0db336"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         //vSeeds.emplace_back("seed-a.bandito.loshan.co.uk", true);
@@ -145,7 +145,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {  0, uint256S("f3983a9eeabda4ad11b339e1e533167c7dd52486b4da937179c2b464fb2f0d81")},
+                {  0, uint256S("1c17f6575a04848f074626278e10dc14cec05897dd5458cfa4588a9834dfec32")},
             }
         };
 
@@ -193,10 +193,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1517356801; // January 31st, 2018
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000007d006a402163e");
+        consensus.nMinimumChainWork = uint256S("0x00");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0xa0afbded94d4be233e191525dc2d467af5c7eab3143c852c3cd549831022aad6"); //343833
+        consensus.defaultAssumeValid = uint256S("0x00"); //0
 
         pchMessageStart[0] = 0xfd;
         pchMessageStart[1] = 0xd2;
@@ -205,10 +205,10 @@ public:
         nDefaultPort = 19335;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1486949366, 293345, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1641146400, 2084917086, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x4966625a4b2851d9fdee139e56211a0d88575f59ed816ff5e6a63deb4e3e29a0"));
-        assert(genesis.hashMerkleRoot == uint256S("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
+        assert(consensus.hashGenesisBlock == uint256S("d62332d5498261f2c5ca00ef70525160ababf8fa712f2b5315561992fa9db5cf"));
+        assert(genesis.hashMerkleRoot == uint256S("c6d49facea084c9d6c4d8ce9deb6030f022e2d61287f4f8c6c39b18fca0db336"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -232,15 +232,15 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {2056, uint256S("17748a31ba97afdc9a4f86837a39d287e3e7c7290a08a1d816c5969c78a83289")},
+                {  0, uint256S("d62332d5498261f2c5ca00ef70525160ababf8fa712f2b5315561992fa9db5cf")},
             }
         };
 
         chainTxData = ChainTxData{
             // Data as of block a0afbded94d4be233e191525dc2d467af5c7eab3143c852c3cd549831022aad6 (height 343833)
-            1516406749,
-            794057,
-            0.01
+            1641146400,
+            0,
+            0
         };
 
     }
