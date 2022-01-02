@@ -118,10 +118,10 @@ public:
         nDefaultPort = 42069;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1641054360, 2085353509, 0x1e0ffff0, 1, 69 * COIN);
+        genesis = CreateGenesisBlock(1641054360, 2086286763, 0x1e0ffff0, 1, 69 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-	assert(consensus.hashGenesisBlock == uint256S("0xf3983a9eeabda4ad11b339e1e533167c7dd52486b4da937179c2b464fb2f0d81"));
-        assert(genesis.hashMerkleRoot == uint256S("0x9982f80196981559d8a68830e8574117b3d30d7b33af51a8226a9cf0782ca5f4"));
+	assert(consensus.hashGenesisBlock == uint256S("7926c0d699ee352071a7a18f4b7bc2c35ca3061063ab56055bf5cf151474306a"));
+        assert(genesis.hashMerkleRoot == uint256S("2e5fc7f6f3ff6152457895fe5f45db624b90abe4a13f414ba04ddb8d64fdb882"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         //vSeeds.emplace_back("seed-a.bandito.loshan.co.uk", true);
@@ -145,7 +145,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {  0, uint256S("0xf3983a9eeabda4ad11b339e1e533167c7dd52486b4da937179c2b464fb2f0d81")},
+                {  0, uint256S("7926c0d699ee352071a7a18f4b7bc2c35ca3061063ab56055bf5cf151474306a")},
             }
         };
 
