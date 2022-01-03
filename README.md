@@ -1,12 +1,20 @@
 Bandito Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/bandito-project/bandito.svg?branch=master)](https://travis-ci.org/bandito-project/bandito)
-
-https://bandito.org
+https://www.banditocoin.com
 
 What is Bandito?
 ----------------
+Bandito is a brand new, scrypt based cryptocurrency forked from Litecoin 
+and branded for the Bandito BoysTM, Abner Vaca and Kirk Jerkems of NoPixel.
+
+I've done this as something of a weekend projet to keep my skills sharp and will
+work on it and maintain it pretty much at my leisure. If people show any real
+interest or it picks up any type of traction, I may pay it more attention.
+
+In any case, enjoy and have fun!!
+
+(Generic Crypto README.md stuff below)
 
 Bandito is an experimental digital currency that enables instant payments to
 anyone, anywhere in the world. Bandito uses peer-to-peer technology to operate
@@ -15,7 +23,7 @@ out collectively by the network. Bandito Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Bandito Core software, see [https://bandito.org](https://bandito.org).
+the Bandito Core software, see [https://www.banditocoin.com](https://www.banditocoin.com).
 
 License
 -------
@@ -27,53 +35,5 @@ Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/bandito-project/bandito/tags) are created
+completely stable. [Tags](https://github.com/sunrisellc/bandito/tags) are created
 regularly to indicate new official, stable release versions of Bandito Core.
-
-The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
-
-The developer [mailing list](https://groups.google.com/forum/#!forum/bandito-dev)
-should be used to discuss complicated or controversial changes before working
-on a patch set.
-
-Developer IRC can be found on Freenode at #bandito-dev.
-
-Testing
--------
-
-Testing and code review is the bottleneck for development; we get more pull
-requests than we can review and test on short notice. Please be patient and help out by testing
-other people's pull requests, and remember this is a security-critical project where any mistake might cost people
-lots of money.
-
-### Automated Testing
-
-Developers are strongly encouraged to write [unit tests](src/test/README.md) for new code, and to
-submit new unit tests for old code. Unit tests can be compiled and run
-(assuming they weren't disabled in configure) with: `make check`. Further details on running
-and extending unit tests can be found in [/src/test/README.md](/src/test/README.md).
-
-There are also [regression and integration tests](/test), written
-in Python, that are run automatically on the build server.
-These tests can be run (if the [test dependencies](/test) are installed) with: `test/functional/test_runner.py`
-
-The Travis CI system makes sure that every pull request is built for Windows, Linux, and OS X, and that unit/sanity tests are run automatically.
-
-### Manual Quality Assurance (QA) Testing
-
-Changes should be tested by somebody other than the developer who wrote the
-code. This is especially important for large or high-risk changes. It is useful
-to add a test plan to the pull request description if testing the changes is
-not straightforward.
-
-Translations
-------------
-
-We only accept translation fixes that are submitted through [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
-Translations are converted to Bandito periodically.
-
-Translations are periodically pulled from Transifex and merged into the git repository. See the
-[translation process](doc/translation_process.md) for details on how this works.
-
-**Important**: We do not accept translation changes as GitHub pull requests because the next
-pull from Transifex would automatically overwrite them again.
