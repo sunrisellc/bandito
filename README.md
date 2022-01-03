@@ -6,10 +6,10 @@ https://www.banditocoin.com
 What is Bandito?
 ----------------
 Bandito is a brand new, scrypt based cryptocurrency forked from Litecoin 
-and branded for the Bandito BoysTM, Abner Vaca and Kirk Jerkems of NoPixel.
+and branded for the Bandito Boys(TM), Abner Vaca and Kirk Jerkems of NoPixel.
 
-I've done this as something of a weekend projet to keep my skills sharp and will
-work on it and maintain it pretty much at my leisure. If people show any real
+I've done this as something of a weekend project to keep my skills sharp and will
+work on and maintain it pretty much at my leisure. If people show any real
 interest or it picks up any type of traction, I may pay it more attention.
 
 In any case, enjoy and have fun!!
