@@ -124,8 +124,8 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("c6d49facea084c9d6c4d8ce9deb6030f022e2d61287f4f8c6c39b18fca0db336"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        //vSeeds.emplace_back("seed-a.bandito.loshan.co.uk", true);
-        //vSeeds.emplace_back("dnsseed.thrasher.io", true);
+        vSeeds.emplace_back("dns1.banditocoin.com", true);
+        vSeeds.emplace_back("dns2.banditocoin.com", true);
         //vSeeds.emplace_back("dnsseed.banditotools.com", true);
         //vSeeds.emplace_back("dnsseed.banditopool.org", true);
         //vSeeds.emplace_back("dnsseed.koin-project.com", false);
