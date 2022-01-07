@@ -118,10 +118,10 @@ public:
         nDefaultPort = 4269;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1641517926, 2085133618, 0x1e0ffff0, 1, 69 * COIN);
+        genesis = CreateGenesisBlock(1641517926, 2084719154, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-	assert(consensus.hashGenesisBlock == uint256S("058895fbba172e01989200301182fa96bde5eac5f917738045c580acf636c42c"));
-        assert(genesis.hashMerkleRoot == uint256S("2f7f560d9c9f06284216079f188d89bf8c71171d12c5dcd0c086719920e3ef24"));
+	assert(consensus.hashGenesisBlock == uint256S("62892c59f77e7e35e2ffe035f6c2d838d8b0990f2930e884be57def9538d161b"));
+        assert(genesis.hashMerkleRoot == uint256S("f7ac7926015ac960a6165317339fa15e9202526f9c7f5ff97f388be39f813b45"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         vSeeds.emplace_back("dns1.banditocoin.com", true);
@@ -142,7 +142,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {  0, uint256S("058895fbba172e01989200301182fa96bde5eac5f917738045c580acf636c42c")},
+                {  0, uint256S("62892c59f77e7e35e2ffe035f6c2d838d8b0990f2930e884be57def9538d161b")},
             }
         };
 
@@ -202,10 +202,10 @@ public:
         nDefaultPort = 14269;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1641518813, 2085318742, 0x1e0ffff0, 1, 69 * COIN);
+        genesis = CreateGenesisBlock(1641518813, 2084863286, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("789031aeb9423d4d8fcc4243df3821f9b040276c5ff2e4373efec14c10a2ab3e"));
-        assert(genesis.hashMerkleRoot == uint256S("2f7f560d9c9f06284216079f188d89bf8c71171d12c5dcd0c086719920e3ef24"));
+        assert(consensus.hashGenesisBlock == uint256S("b10c7dee4963e99e0b6e8e63b86dbf19ef6f5b80af4c930fa02f44d43e0d8e31"));
+        assert(genesis.hashMerkleRoot == uint256S("f7ac7926015ac960a6165317339fa15e9202526f9c7f5ff97f388be39f813b45"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -228,7 +228,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {  0, uint256S("789031aeb9423d4d8fcc4243df3821f9b040276c5ff2e4373efec14c10a2ab3e")},
+                {  0, uint256S("b10c7dee4963e99e0b6e8e63b86dbf19ef6f5b80af4c930fa02f44d43e0d8e31")},
             }
         };
 
