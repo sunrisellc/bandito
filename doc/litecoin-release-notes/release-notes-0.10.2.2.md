@@ -51,7 +51,7 @@ is included in as separate release-notes.  This section describes the Bandito-sp
 
 Protocol:
 - Scrypt Proof-of-Work instead of sha256d, however block hashes are sha256d for performance reasons.
-- Bandito TCP port 42069 (instead of 8333)
+- Bandito TCP port 4269 (instead of 8333)
 - RPC TCP port 9332 (instead of 8332)
 - Testnet TCP port 42169 (instead of 18333)
 - Testnet RPC TCP port 19332 (instead of 18332)

@@ -48,7 +48,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "AP World News 01-02-2022 | Fire ravages South Africa’s historic Parliament complex";
+    const char* pszTimestamp = "The Onion Jan. 6th, 2022 Congress Preparing For Another January 6 By Enrolling In Group Karate Class";
     const CScript genesisOutputScript = CScript() << ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -112,23 +112,20 @@ public:
          * a large 32-bit integer with any alignment.
          */
         pchMessageStart[0] = 0x4D;
-        pchMessageStart[1] = 0x65;
-        pchMessageStart[2] = 0x74;
-        pchMessageStart[3] = 0x68;
-        nDefaultPort = 42069;
+        pchMessageStart[1] = 0x45;
+        pchMessageStart[2] = 0x54;
+        pchMessageStart[3] = 0x48;
+        nDefaultPort = 4269;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1641142800, 2085105567, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1641517926, 2085133618, 0x1e0ffff0, 1, 69 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-	assert(consensus.hashGenesisBlock == uint256S("1c17f6575a04848f074626278e10dc14cec05897dd5458cfa4588a9834dfec32"));
-        assert(genesis.hashMerkleRoot == uint256S("c6d49facea084c9d6c4d8ce9deb6030f022e2d61287f4f8c6c39b18fca0db336"));
+	assert(consensus.hashGenesisBlock == uint256S("058895fbba172e01989200301182fa96bde5eac5f917738045c580acf636c42c"));
+        assert(genesis.hashMerkleRoot == uint256S("2f7f560d9c9f06284216079f188d89bf8c71171d12c5dcd0c086719920e3ef24"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         vSeeds.emplace_back("dns1.banditocoin.com", true);
         vSeeds.emplace_back("dns2.banditocoin.com", true);
-        //vSeeds.emplace_back("dnsseed.banditotools.com", true);
-        //vSeeds.emplace_back("dnsseed.banditopool.org", true);
-        //vSeeds.emplace_back("dnsseed.koin-project.com", false);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,25);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,26);
@@ -145,17 +142,16 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {  0, uint256S("1c17f6575a04848f074626278e10dc14cec05897dd5458cfa4588a9834dfec32")},
-                {  16530, uint256S("b4a44284e640d871ba7ad6f207f67afdb5ff2bd456beeff04b9bcc1987b65099")},
+                {  0, uint256S("058895fbba172e01989200301182fa96bde5eac5f917738045c580acf636c42c")},
             }
         };
 
         chainTxData = ChainTxData{
             // Data as of block
-            1641501126, // * UNIX timestamp of last known number of transactions
-            19234,  // * total number of transactions between genesis and that timestamp
+            1641517926, // * UNIX timestamp of last known number of transactions
+            0,  // * total number of transactions between genesis and that timestamp
                     //   (the tx=... number in the SetBestChain debug.log lines)
-            0.05647252279367503     // * estimated number of transactions per second after that timestamp
+            0     // * estimated number of transactions per second after that timestamp
         };
     }
 };
@@ -203,20 +199,19 @@ public:
         pchMessageStart[1] = 0xd2;
         pchMessageStart[2] = 0xc8;
         pchMessageStart[3] = 0xf1;
-        nDefaultPort = 19335;
+        nDefaultPort = 14269;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1641146400, 2084917086, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1641518813, 2085318742, 0x1e0ffff0, 1, 69 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("d62332d5498261f2c5ca00ef70525160ababf8fa712f2b5315561992fa9db5cf"));
-        assert(genesis.hashMerkleRoot == uint256S("c6d49facea084c9d6c4d8ce9deb6030f022e2d61287f4f8c6c39b18fca0db336"));
+        assert(consensus.hashGenesisBlock == uint256S("789031aeb9423d4d8fcc4243df3821f9b040276c5ff2e4373efec14c10a2ab3e"));
+        assert(genesis.hashMerkleRoot == uint256S("2f7f560d9c9f06284216079f188d89bf8c71171d12c5dcd0c086719920e3ef24"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("testnet-seed.banditotools.com", true);
-        vSeeds.emplace_back("seed-b.bandito.loshan.co.uk", true);
-        vSeeds.emplace_back("dnsseed-testnet.thrasher.io", true);
+        vSeeds.emplace_back("test1.banditocoin.com", true);
+        vSeeds.emplace_back("test2.banditocoin.com", true);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
@@ -233,13 +228,13 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {  0, uint256S("d62332d5498261f2c5ca00ef70525160ababf8fa712f2b5315561992fa9db5cf")},
+                {  0, uint256S("789031aeb9423d4d8fcc4243df3821f9b040276c5ff2e4373efec14c10a2ab3e")},
             }
         };
 
         chainTxData = ChainTxData{
             // Data as of block a0afbded94d4be233e191525dc2d467af5c7eab3143c852c3cd549831022aad6 (height 343833)
-            1641146400,
+            1641518813,
             0,
             0
         };
