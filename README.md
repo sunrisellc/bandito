@@ -1,55 +1,12 @@
 Bandito Core integration/staging tree
 =====================================
 
-https://www.banditocoin.com
+[![Build Status](https://travis-ci.org/bandito-project/bandito.svg?branch=master)](https://travis-ci.org/bandito-project/bandito)
+
+https://bandito.org
 
 What is Bandito?
 ----------------
-Bandito is a brand new, scrypt based cryptocurrency forked from Litecoin 
-and branded for the Bandito Boys(TM), Abner Vaca and Kirk Jerkems of NoPixel.
-
-I've done this as something of a weekend project to keep my skills sharp and will
-work on and maintain it pretty much at my leisure. If people show any real
-interest or it picks up any type of traction, I may pay it more attention.
-
-In any case, enjoy and have fun!!
-
-Network Difficulty Explained
-
-Difficulty automatically readjusts ever 1008 blocks.
-The hard-coded difficulty readjustment target is every 1.75 days.
-The hard-coded block generation target is 1 block every 2.5 minutes.
-
-Diff Readustment Target:
-“consensus.nPowTargetTimespan = 1.75 * 24 * 60 * 60;” = 151,200 seconds OR 1.75 Days
-
-Block Generation Target:
-“consensus.nPowTargetSpacing = 2.5 * 60;” = 150 seconds OR 2.5 Minutes
-
-The Math:
-151,200 / 150 = 1008
-
-So… what all of that means is this:
-
-If it takes LESS then 1.75 days for network miners to produce 1008 blocks,
-difficulty with be INCREASED based on the recent network hashrate in an attempt
-to achieve the desired 1008 blocks per 1.75 days.
-
-If it takes MORE then 1.75 days for network miners to produce 1008 blocks,
-difficulty with be REDUCED based on the recent network hashrate in an attempt
-to achieve the desired 1008 blocks per 1.75 days.
-
-Network difficulty dictates how difficult it is for a given miner to produce new coins.
-As network hashrate is increased, difficulty is as well, making it more difficult to
-produce new coins for the network.
-
-It is important to keep this in mind when deciding to add additional hashpower to network.
-
-You may mine more coins, but in the long run without wide, longterm and decentralized support from
-miners the network may stall and become unable to process blocks, killing the coin.
-
-
-(Generic Crypto README.md stuff below)
 
 Bandito is an experimental digital currency that enables instant payments to
 anyone, anywhere in the world. Bandito uses peer-to-peer technology to operate
@@ -58,7 +15,7 @@ out collectively by the network. Bandito Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Bandito Core software, see [https://www.banditocoin.com](https://www.banditocoin.com).
+the Bandito Core software, see [https://bandito.org](https://bandito.org).
 
 License
 -------
@@ -70,5 +27,53 @@ Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/sunrisellc/bandito/tags) are created
+completely stable. [Tags](https://github.com/bandito-project/bandito/tags) are created
 regularly to indicate new official, stable release versions of Bandito Core.
+
+The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+The developer [mailing list](https://groups.google.com/forum/#!forum/bandito-dev)
+should be used to discuss complicated or controversial changes before working
+on a patch set.
+
+Developer IRC can be found on Freenode at #bandito-dev.
+
+Testing
+-------
+
+Testing and code review is the bottleneck for development; we get more pull
+requests than we can review and test on short notice. Please be patient and help out by testing
+other people's pull requests, and remember this is a security-critical project where any mistake might cost people
+lots of money.
+
+### Automated Testing
+
+Developers are strongly encouraged to write [unit tests](src/test/README.md) for new code, and to
+submit new unit tests for old code. Unit tests can be compiled and run
+(assuming they weren't disabled in configure) with: `make check`. Further details on running
+and extending unit tests can be found in [/src/test/README.md](/src/test/README.md).
+
+There are also [regression and integration tests](/test), written
+in Python, that are run automatically on the build server.
+These tests can be run (if the [test dependencies](/test) are installed) with: `test/functional/test_runner.py`
+
+The Travis CI system makes sure that every pull request is built for Windows, Linux, and macOS, and that unit/sanity tests are run automatically.
+
+### Manual Quality Assurance (QA) Testing
+
+Changes should be tested by somebody other than the developer who wrote the
+code. This is especially important for large or high-risk changes. It is useful
+to add a test plan to the pull request description if testing the changes is
+not straightforward.
+
+Translations
+------------
+
+We only accept translation fixes that are submitted through [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
+Translations are converted to Bandito periodically.
+
+Translations are periodically pulled from Transifex and merged into the git repository. See the
+[translation process](doc/translation_process.md) for details on how this works.
+
+**Important**: We do not accept translation changes as GitHub pull requests because the next
+pull from Transifex would automatically overwrite them again.

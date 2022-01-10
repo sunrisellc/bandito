@@ -1,13 +1,16 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
+export LC_ALL=C
 TOPDIR=${TOPDIR:-$(git rev-parse --show-toplevel)}
-SRCDIR=${SRCDIR:-$TOPDIR/src}
+BUILDDIR=${BUILDDIR:-$TOPDIR}
+
+BINDIR=${BINDIR:-$BUILDDIR/src}
 MANDIR=${MANDIR:-$TOPDIR/doc/man}
 
-LITECOIND=${LITECOIND:-$SRCDIR/banditod}
-LITECOINCLI=${LITECOINCLI:-$SRCDIR/bandito-cli}
-LITECOINTX=${LITECOINTX:-$SRCDIR/bandito-tx}
-LITECOINQT=${LITECOINQT:-$SRCDIR/qt/bandito-qt}
+LITECOIND=${BITCOIND:-$BINDIR/banditod}
+LITECOINCLI=${BITCOINCLI:-$BINDIR/bandito-cli}
+LITECOINTX=${BITCOINTX:-$BINDIR/bandito-tx}
+LITECOINQT=${BITCOINQT:-$BINDIR/qt/bandito-qt}
 
 [ ! -x $LITECOIND ] && echo "$LITECOIND not found or not executable." && exit 1
 
