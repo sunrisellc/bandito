@@ -85,7 +85,7 @@ public:
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 6048; // 75% of 8064
-        consensus.nMinerConfirmationWindow = 8064; // nPowTargetTimespan / nPowTargetSpacing * 4
+        consensus.nMinerConfirmationWindow = 8064; // nPowTargetTimespan / nPowTargetSpacing * 8
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
@@ -143,15 +143,21 @@ public:
         checkpointData = (CCheckpointData) {
             {
                 {  0, uint256S("32406bedc8476b240c9623ec71611130ee87251e68b7c7acefe5246e381fa758")},
+                {100, uint256S("7ad4e1ce496984bba084a15da1829697090a2769c60e0e98c7ae0befe312a1f5")},
+                {500, uint256S("89a1920610f33002a17e38cd611063ca05aba28f1fafad212dbef636d6390439")},
+                {1000, uint256S("9f7745bd212b65e0680ec7cf3f63d50aa1b38f5e7568075ea1ffb9b9aef9591d")},
+                {2500, uint256S("8adae9504440be99193154152f436c2e3d9254d164045863d8d5779a721c07b5")},
+                {5000, uint256S("d58aa649710c61c6935cb2a89338341dfc82d170abdbb8300ba50915f530e0a7")},
+
             }
         };
 
         chainTxData = ChainTxData{
             // Data as of block
-            1641566310, // * UNIX timestamp of last known number of transactions
-            0,  // * total number of transactions between genesis and that timestamp
+            1642212849, // * UNIX timestamp of last known number of transactions
+            7915,  // * total number of transactions between genesis and that timestamp
                     //   (the tx=... number in the SetBestChain debug.log lines)
-            0     // * estimated number of transactions per second after that timestamp
+            0.01035123634915422     // * estimated number of transactions per second after that timestamp
         };
     }
 };
