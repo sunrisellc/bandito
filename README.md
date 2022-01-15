@@ -1,9 +1,9 @@
 Bandito Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/bandito-project/bandito.svg?branch=master)](https://travis-ci.org/bandito-project/bandito)
+[![Build Status](https://travis-ci.org/sunrisellc/bandito.svg?branch=master)](https://travis-ci.org/sunrisellc/bandito)
 
-https://bandito.org
+https://www.banditocoin.com
 
 What is Bandito?
 ----------------
@@ -15,7 +15,7 @@ out collectively by the network. Bandito Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Bandito Core software, see [https://bandito.org](https://bandito.org).
+the Bandito Core software, see [https://www.banditocoin.com](https://www.banditocoin.com).
 
 License
 -------
@@ -27,10 +27,11 @@ Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/bandito-project/bandito/tags) are created
+completely stable. [Tags](https://github.com/sunrisellc/bandito/tags) are created
 regularly to indicate new official, stable release versions of Bandito Core.
 
-The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
+The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md)
+and useful hints for developers can be found in [doc/developer-notes.md](doc/developer-notes.md).
 
 The developer [mailing list](https://groups.google.com/forum/#!forum/bandito-dev)
 should be used to discuss complicated or controversial changes before working

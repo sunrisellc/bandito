@@ -7,11 +7,13 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/bandito-project/bandito-detached-sigs.git"
+- "url": "https://github.com/sunrisellc/bandito-detached-sigs.git"
   "dir": "signature"
 files:
 - "bandito-osx-unsigned.tar.gz"
 script: |
+  set -e -o pipefail
+
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
   export PATH=`pwd`:$PATH

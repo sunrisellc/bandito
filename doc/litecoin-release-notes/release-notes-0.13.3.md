@@ -1,13 +1,13 @@
 Bandito Core version 0.13.3 is now available from:
 
-  <https://download.bandito.org/bandito-0.13.3/>
+  <https://download.www.banditocoin.com/bandito-0.13.3/>
 
 This is a new minor version release, including new features, various bugfixes and performance improvements.
 It is recommended to upgrade to this version.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/bandito-project/bandito/issues>
+  <https://github.com/sunrisellc/bandito/issues>
 
 Compatibility
 ==============
@@ -64,7 +64,7 @@ Testnet faucets can be located at:
 - http://testnet.banditotools.com
 - http://testnet.thrasher.io
 
-Developers who require the new testnet blockchain paramaters can find them [here](https://github.com/bandito-project/bandito/blob/0.13/src/chainparams.cpp#L214).
+Developers who require the new testnet blockchain paramaters can find them [here](https://github.com/sunrisellc/bandito/blob/0.13/src/chainparams.cpp#L214).
 
 Credits
 =======

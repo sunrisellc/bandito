@@ -47,8 +47,12 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "Bandito"
-#define QAPP_ORG_DOMAIN "bandito.org"
+#define QAPP_ORG_DOMAIN "www.banditocoin.com"
 #define QAPP_APP_NAME_DEFAULT "Bandito-Qt"
 #define QAPP_APP_NAME_TESTNET "Bandito-Qt-testnet"
+#define QAPP_APP_NAME_REGTEST "Bandito-Qt-regtest"
+
+/* One gigabyte (GB) in bytes */
+static constexpr uint64_t GB_BYTES{1000000000};
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

@@ -1,6 +1,6 @@
 Bandito Core version 0.10.4.0 is now available from:
 
-  <https://download.bandito.org/bandito-0.10.4.0/>
+  <https://download.www.banditocoin.com/bandito-0.10.4.0/>
 
 This is a new minor version release, bringing bug fixes, the BIP65
 (CLTV) consensus change, and relay policy preparation for BIP113. It is
@@ -8,7 +8,7 @@ recommended to upgrade to this version as soon as possible.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/bandito-project/bandito/issues>
+  <https://github.com/sunrisellc/bandito/issues>
 
 Upgrading and downgrading
 =========================

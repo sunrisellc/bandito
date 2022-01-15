@@ -1,13 +1,13 @@
 Bandito Core version 0.10.2.2 is now available from:
 
-  <https://download.bandito.org/bandito-0.10.2.2/>
+  <https://download.www.banditocoin.com/bandito-0.10.2.2/>
 
 This is a new major version release, bringing bug fixes and translation 
 updates. It is recommended to upgrade to this version.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/bandito-project/bandito/issues>
+  <https://github.com/sunrisellc/bandito/issues>
 
 Upgrading and downgrading
 =========================
