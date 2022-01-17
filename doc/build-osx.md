@@ -43,7 +43,7 @@ Build Bandito Core
 
 1. Clone the Bandito Core source code:
 
-        git clone https://github.com/sunrisellc/bandito
+        git clone https://github.com/banditocoin/bandito
         cd bandito
 
 2.  Build Bandito Core:

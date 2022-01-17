@@ -23,7 +23,7 @@ packages:
 - "python"
 - "rename"
 remotes:
-- "url": "https://github.com/sunrisellc/bandito.git"
+- "url": "https://github.com/banditocoin/bandito.git"
   "dir": "bandito"
 files: []
 script: |

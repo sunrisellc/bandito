@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/sunrisellc/bandito-detached-sigs.git"
+- "url": "https://github.com/banditocoin/bandito-detached-sigs.git"
   "dir": "signature"
 files:
 - "bandito-osx-unsigned.tar.gz"

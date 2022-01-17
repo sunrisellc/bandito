@@ -1,7 +1,7 @@
 Bandito Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/sunrisellc/bandito.svg?branch=master)](https://travis-ci.org/sunrisellc/bandito)
+[![Build Status](https://travis-ci.org/banditocoin/bandito.svg?branch=master)](https://travis-ci.org/banditocoin/bandito)
 
 https://www.banditocoin.com
 
@@ -27,7 +27,7 @@ Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/sunrisellc/bandito/tags) are created
+completely stable. [Tags](https://github.com/banditocoin/bandito/tags) are created
 regularly to indicate new official, stable release versions of Bandito Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md)
